@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      App Revisão
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>EAEEEEEEEEEW</h1>
+  
+ 
+  <button ion-button block (click)="exibirAlert()" color="secondary">exibir Alert</button>
+  <button ion-button block (click)="exibirModal()" color="danger">exibir Modal</button>
+
+  <br>
+  <br>
+
+  <button ion-button block (click)="irNovaPagina()">Proxima Pagina</button>
+  <br><hr>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Parametro" [(ngModel)]="parametro"></ion-input>
+    </ion-item>
+
+    <button ion-button block (click)="enviarParametro()" color="dark">Enviar Dados</button>
+  </ion-list>
+
+</ion-content>
